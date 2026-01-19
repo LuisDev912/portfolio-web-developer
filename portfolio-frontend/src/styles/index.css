@@ -73,6 +73,7 @@ body {
     min-height: 100vh;
     color: var(--text-light);
     font-family: var(--font-family-base);
+    font-feature-settings: "liga", "kern";
     font-weight: var(--weight-regular);
     box-sizing: border-box;
     line-height: 1.6;
@@ -102,6 +103,7 @@ body {
 }
 
 .heading-tertiary {
+    font-family: var(--font-family-base);
     font-size: var(--font-size-md);
     font-weight: var(--weight-medium);
     color: var(--text-secondary);
@@ -127,7 +129,7 @@ p {
 /* micro typography */
 
 .prose {
-    max-width: 65ch;
+    max-width: 60ch;
     line-height: 1.7;
 }
 
