@@ -1,5 +1,5 @@
 import { Outlet } from "react-router";
-// import { Header, Footer } from "../components/Semantic.jsx";
+import Footer from "../components/Footer.jsx";
 import { useRef, useEffect } from "react";
 
 function MainLayout() {
@@ -11,8 +11,6 @@ function MainLayout() {
 
     return (
         <>
-            {/* <Header /> */}
-
             <button
                 className="skip-link"
                 onClick={() => {
@@ -30,7 +28,7 @@ function MainLayout() {
                 <Outlet />
             </main>
 
-            {/* <Footer /> */}
+            <Footer />
         </>
     );
 }
