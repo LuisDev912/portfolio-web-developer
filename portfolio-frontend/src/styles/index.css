@@ -130,10 +130,40 @@ p {
     line-height: 1.7;
 }
 
-.text-ui {
-    line-height: 1.4;
-}
-
 section>*+* {
     margin-top: var(--space-sm);
 }
+
+/* --- accessibility --- */
+
+:focus-visible {
+    outline: 3px solid var(--color-accent);
+    outline-offset: 3px;
+}
+
+.skip-link {
+    position: absolute;
+    left: -999px;
+}
+
+.skip-link:focus {
+    left: 1rem;
+    top: 1rem;
+    background: var(--color-accent);
+    color: black;
+    padding: 0.5rem;
+    z-index: 1000;
+}
+
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+}
+
