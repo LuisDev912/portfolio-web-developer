@@ -11,7 +11,7 @@ function App() {
       fontWeight: '600'
     }}> wait until the contend loads </div>} >
 
-      <h1>full stack portfolio</h1>
+      <h1>Hey, I'm Luis</h1>
 
     </Suspense>
   )
