@@ -1,5 +1,9 @@
 import './styles/index.css'
-import { Suspense } from 'react'
+import { lazy, Suspense } from 'react'
+import { Route, Routes } from 'react-router-dom';
+
+const MainLayout = lazy(() => import('./layout/MainLayout.jsx'));
+const HomePage = lazy(() => import('./pages/Home.jsx'));
 
 function App() {
   return (
@@ -9,9 +13,15 @@ function App() {
       padding: '15%',
       fontSize: 'var(--font-size-lg)',
       fontWeight: '600'
-    }}> wait until the contend loads </div>} >
+    }}> wait until the content loads </div>} >
 
-      <h1 className='heading-primary'>Hey, I'm Luis</h1>
+      <Routes>
+        <Route element={<MainLayout />}>
+
+          <Route path="/" element={<HomePage />} />
+
+        </Route>
+      </Routes>
 
     </Suspense>
   )
