@@ -1,10 +1,10 @@
 import './styles/index.css'
 import { lazy, Suspense } from 'react'
 import { Route, Routes } from 'react-router-dom';
-import NotFoundPage from './pages/NotFoundPage.jsx';
 
 const MainLayout = lazy(() => import('./layout/MainLayout.jsx'));
 const HomePage = lazy(() => import('./pages/Home.jsx'));
+const NotFoundPage = lazy(() => import('./pages/NotFoundPage.jsx'))
 
 function App() {
   return (

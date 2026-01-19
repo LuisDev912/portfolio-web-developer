@@ -25,6 +25,10 @@ export default function NotFoundPage() {
                 onClick={() => navigate('/')}>
                 Return
             </button>
+
+            <button>
+                example
+            </button>
         </section>
     );
 };

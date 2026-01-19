@@ -16,6 +16,7 @@
 
     /* dark mode */
     --text-dark: #1f2937;
+    --color-accent: #BFA76A;
 
     /* button */
     --button-background: #2398ff;
@@ -167,3 +168,24 @@ section>*+* {
     border: 0;
 }
 
+/* ---- buttons ---- */
+
+button {
+    border: none;
+    padding: var(--space-sm);
+    border-radius: var(--radius-md);
+    background-color: var(--button-background);
+    transition:
+            background-color var(--transition-fast),
+            box-shadow var(--transition-fast);
+    color: var(--neutral);
+}
+
+button:hover {
+    background-color: var(--button-hover);
+}
+
+button:active {
+    background-color: var(--button-active);
+    box-shadow: var(--shadow);
+}
