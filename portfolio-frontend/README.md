@@ -1,85 +1,70 @@
-# Personal Full Stack Portfolio
+# Portfolio Frontend
 
-This repository contains my personal full stack developer portfolio.
-It showcases selected frontend projects, a custom backend API, and my approach to building clean, maintainable, and user-focused web applications.
+This folder contains the frontend application for my personal developer portfolio.
 
-The goal of this portfolio is not only to display visual results, but also to demonstrate technical decisions, structure, and growth as a developer.
+The frontend is built as a **single-page application (SPA)** focused on clarity, performance, and user experience.
+Its main purpose is to present selected projects, technical information, and a contact interface in a clean and accessible way.
 
 ---
 
 ## Tech Stack
 
-### Frontend
-
-- React + Vite
+- React
+- Vite
 - Modern CSS (Grid & Flexbox)
-- Responsive design
-- Accessible UI
-- Minimal animations focused on UX
+- Responsive layout with mobile-first styles
+- Accessible markup
+- Minimal animations focused on usability
 
-### Backend
-
-- Node.js
-- Express
-- Environment variables
-- Basic security practices
+No UI frameworks or CSS libraries are used in order to clearly demonstrate layout and styling fundamentals.
 
 ---
 
-## Project Structure
+## Structure Overview
 
 ```
-/
-├─ portfolio-frontend/   # Frontend application (React)
-├─ portfolio-backend/    # Backend API (Express)
-├─ LICENSE
-├─ .gitignore
-├─ package-lock.json
-└─ README.md
+src/
+├─ components/   # Reusable UI components
+├─ pages/        # Main sections/pages
+├─ data/         # Static data (projects, content)
+├─ styles/       # Global styles and variables
+├─ layout/       # Global layout for each page 
+├─ App.jsx
+└─ main.jsx
 ```
 
-Each part is developed as an independent project but designed to work together.
+The application is structured to keep concerns separated and improve maintainability.
 
 ---
 
-## What This Portfolio Focuses On
+## Navigation
 
-- Clear and readable code
-- Practical use of modern web technologies
-- Component-based architecture
-- Separation of concerns (frontend / backend)
-- Realistic projects, not demos inflated with unnecessary features
+- Section-based navigation for the main content
+- Client-side routing used only where it adds value
+- Designed to scale if more pages are added in the future
 
 ---
 
-## Projects
+## Backend Integration
 
-The portfolio frontend consumes data from the backend API to display selected projects.
+The frontend consumes data from a custom backend API to display projects and handle the contact flow.
 
-Each project includes:
+This separation allows:
 
-- Short description
-- Technologies used
-- Live demo link
-- Source code link
-
----
-
-## Contact
-
-The portfolio includes a contact section connected to the backend API, designed to simulate a real-world freelance contact flow without storing sensitive data.
+- Independent development
+- Easier future scaling
+- Clear frontend/backend responsibilities
 
 ---
 
-## About Me
+## Running the Project Locally
 
-I am a junior full stack developer with a strong frontend orientation.
-I focus on building clean interfaces, understandable architectures, and scalable foundations.
-
-This portfolio represents my current level and is continuously evolving as I learn and improve.
+```bash
+npm install
+npm run dev
+```
 
 ---
 
-## License
-
-This project is licensed under the MIT License.
+## Purpose
+This frontend is not meant to be a visual experiment, but a realistic portfolio application that reflects how I approach structure, styling, and user-focused development.
