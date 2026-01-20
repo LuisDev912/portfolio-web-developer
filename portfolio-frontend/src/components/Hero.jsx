@@ -1,7 +1,18 @@
 function Hero() {
     return (
-        <section>
-            <h1 className="heading-primary">Hey, I'm Luis</h1>
+        <section style={{
+            display: 'flex',
+            flexDirection: 'column',
+            alignItems: 'center'
+        }}>
+            
+            <h1 className="heading-primary">
+                Frontend-oriented Full Stack Developer 
+            </h1>
+
+            <p className="heading-tertiary prose">
+                Building clean, accessible web applications with modern JavaScript. 
+            </p>
         </section>
     )
 }

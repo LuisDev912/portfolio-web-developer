@@ -3,8 +3,7 @@ import Contact from './Contact.jsx';
 function Footer() {
     return (
         <footer>
-            <p>&copy; {new Date().getFullYear()} - Luis Calleja</p>
-
+            <p className='italic small-text'>&copy; {new Date().getFullYear()} - Luis Calleja</p>
             <Contact />
         </footer>
     )
