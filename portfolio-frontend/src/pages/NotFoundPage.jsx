@@ -7,8 +7,7 @@ export default function NotFoundPage() {
         <section
             style={{
                 display: 'flex',
-                justifyContent: 'center',
-                textAlign: 'center',
+                alignItems: 'center',
                 flexDirection: 'column'
             }}
         >
@@ -17,13 +16,13 @@ export default function NotFoundPage() {
             >
                 Oops!
             </h1>
-            <p>
+            <p className='prose'>
                 It seems like the page you were looking for does not exist. Please return to the home page.
             </p>
 
             <button
                 onClick={() => navigate('/')}>
-                Return
+                Return to the home page
             </button>
         </section>
     );
