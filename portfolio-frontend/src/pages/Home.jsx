@@ -1,5 +1,5 @@
 import Hero from "../components/Hero"
-import Learning from "../components/Learning"
+import Learning from "../components/Learning/Learning.jsx"
 
 export default function HomePage() {
     return (
