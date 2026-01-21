@@ -1,10 +1,6 @@
 function Hero() {
     return (
-        <section style={{
-            display: 'flex',
-            flexDirection: 'column',
-            alignItems: 'center'
-        }}>
+        <section className='hero'>
             
             <h1 className="heading-primary">
                 Frontend-oriented Full Stack Developer 

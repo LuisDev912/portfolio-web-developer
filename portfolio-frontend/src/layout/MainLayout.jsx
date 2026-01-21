@@ -14,7 +14,7 @@ function MainLayout() {
             <button
                 className="skip-link"
                 onClick={() => {
-                    document.getElementById('main-content')?.focus()
+                    mainRef.current?.focus()
                 }}
             >
                 skip to content
