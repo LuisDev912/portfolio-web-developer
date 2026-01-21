@@ -1,0 +1,21 @@
+.coursesList {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.courseCard {
+    padding: 1.2rem;
+    border-radius: var(--radius-md);
+}
+
+.courseCard::marker{
+    color: gold;
+    font-size: 2rem;
+}
+
+.focusList {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}

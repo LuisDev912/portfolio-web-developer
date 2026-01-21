@@ -1,3 +1,5 @@
+import Styles from './Learning.module.css'
+
 function Learning() {
     const courses = [
         {
@@ -28,21 +30,25 @@ function Learning() {
         <section>
             <h2 className="heading-secondary">Learning & Training</h2>
 
-            <ul className="courses-list">
+            <ul className={Styles.coursesList}>
                 {courses.map(course => (
-                    <li key={course.id} className="course-card">
+                    <li key={course.id} className={Styles.courseCard}>
 
                         <header className="course-header">
                             <h3 className="course-title">{course.title}</h3>
-                            <span className="course-year">{course.year}</span>
+
+                            <span className="course-provider">
+                                {course.provider}
+                                {course.status && ` · ${course.status}`}
+                            </span>
                         </header>
 
-                        <p className="course-provider">
-                            {course.provider}
-                            {course.status && ` · ${course.status}`}
+                        <p className="course-year small-text">
+                            {course.year}
                         </p>
 
-                        <ul className="course-focus">
+                        <span>concepts: </span>
+                        <ul className={Styles.focusList}>
                             {course.focus.map(tech => (
                                 <li key={tech}>{tech}</li>
                             ))}
