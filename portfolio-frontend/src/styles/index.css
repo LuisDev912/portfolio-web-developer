@@ -91,6 +91,15 @@ body {
     }
 }
 
+a{
+    color: var(--text-muted);
+    text-decoration: none;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
 main {
     padding-inline: 1.25rem;
     padding-block: 4rem;
