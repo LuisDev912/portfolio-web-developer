@@ -1,4 +1,4 @@
-import Contact from './Contact.jsx';
+import Contact from './Contact/Contact.jsx';
 
 function Footer() {
     return (
