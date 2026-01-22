@@ -94,6 +94,7 @@ body {
 a{
     color: var(--text-muted);
     text-decoration: none;
+    margin-left: 5px;
 }
 
 a:hover{
@@ -107,6 +108,13 @@ main {
 
 section {
     padding-block: 4rem;
+}
+
+footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: var(--space-xs);
 }
 
 /* Hero overrides */
