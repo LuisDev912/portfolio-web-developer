@@ -25,17 +25,17 @@
     display: flex;
     flex-wrap: wrap;
     gap: 0.5rem;
+    padding: 0;
+    margin-top: .25rem;
 }
 
 .focusElement{
+    list-style: none;
     border: 2px solid transparent;
+    font-size: var(--font-size-sm);
     background-color: var(--primary);
     border-radius: var(--radius-md);
-    padding: 2px;
-}
-
-.focusElement:not(:first-child){
-    list-style: none;
+    padding: .25rem .5rem;
 }
 
 /* --- text --- */
@@ -46,4 +46,16 @@
 
 .courseProvider{
     font-weight: var(--weight-semibold);
+}
+
+@media (min-width: 640px) {
+    .coursesList {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 1024px) {
+    .coursesList {
+        grid-template-columns: repeat(3, 1fr);
+    }
 }

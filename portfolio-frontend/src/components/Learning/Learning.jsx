@@ -7,7 +7,7 @@ function Learning() {
             title: "Full Stack JavaScript Bootcamp",
             provider: "Midudev",
             status: "In progress",
-            focus: ["JavaScript", "React", "Node.js", "Express", "Testing"],
+            focus: ["JavaScript", "React", "Node.js", "Express", "Testing", "In process..."],
             year: "2025-Present"
         },
         {
