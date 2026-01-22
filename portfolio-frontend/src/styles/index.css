@@ -1,3 +1,4 @@
+/* --- global --- */
 :root {
     /* base */
     --primary: #1e3a8a;
@@ -16,7 +17,12 @@
 
     /* dark mode */
     --text-dark: #1f2937;
-    --color-accent: #BFA76A;
+    --color-accent: #facc15;
+
+    /* Text roles */
+    --text-primary: #EDEDED;
+    --text-secondary: #CFCFCF;
+    --text-muted: #9CA3AF;
 
     /* button */
     --button-background: #2398ff;
@@ -102,11 +108,6 @@ section.hero {
     align-items: center;
 }
 
-/* Typography container control */
-section:not(.hero) .prose {
-    margin-inline: 0;
-}
-
 /* --- text --- */
 
 .heading-primary {
@@ -154,10 +155,6 @@ p {
     max-width: 60ch;
     line-height: 1.7;
     text-align: justify;
-}
-
-.hero .prose {
-    margin-inline: auto;
 }
 
 section>*+* {

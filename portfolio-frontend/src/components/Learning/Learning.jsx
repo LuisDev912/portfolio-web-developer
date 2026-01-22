@@ -35,9 +35,9 @@ function Learning() {
                     <li key={course.id} className={Styles.courseCard}>
 
                         <header className="course-header">
-                            <h3 className="course-title">{course.title}</h3>
+                            <h3 className={Styles.courseTitle}>{course.title}</h3>
 
-                            <span className="course-provider">
+                            <span className={Styles.courseProvider}>
                                 {course.provider}
                                 {course.status && ` · ${course.status}`}
                             </span>
@@ -47,10 +47,10 @@ function Learning() {
                             {course.year}
                         </p>
 
-                        <span>concepts: </span>
+                        <span className='italic'>concepts: </span>
                         <ul className={Styles.focusList}>
                             {course.focus.map(tech => (
-                                <li key={tech}>{tech}</li>
+                                <li key={tech} className={Styles.focusElement}>{tech}</li>
                             ))}
                         </ul>
 
