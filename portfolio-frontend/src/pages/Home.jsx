@@ -7,15 +7,18 @@ export default function HomePage() {
         <>
             <Hero />
             <Learning />
-            <ProjectCard
-                title='example'
-                description='Description example for the card'
-                image='blank'
-                stack={['React', 'i18n']}
-                demoUrl='http://page.host.com'
-                codeUrl='https://github.com/example'
-            
-            />
+            <section>
+                <h3 className="heading-secondary">Projects</h3>
+                <ProjectCard
+                    title='example'
+                    description='Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris'
+                    image='blank'
+                    stack={['React', 'i18n']}
+                    demoUrl='http://page.host.com'
+                    codeUrl='https://github.com/example'
+                
+                />
+            </section>
         </>
     )
 }

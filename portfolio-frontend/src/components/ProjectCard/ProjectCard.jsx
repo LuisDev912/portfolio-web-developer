@@ -9,10 +9,8 @@ function ProjectCard({ title, description, image, stack, demoUrl, codeUrl }) {
             </div>
 
             <div className={Styles.content}>
-                <h3>{title}</h3>
+                <h3 className={Styles.title}>{title}</h3>
 
-                <p>{description}</p>
-                
                 <ul className={Styles.stack}>
                     {stack.map(tech => (
                         <li key={tech} className={Styles.stackItem}>
@@ -20,6 +18,8 @@ function ProjectCard({ title, description, image, stack, demoUrl, codeUrl }) {
                         </li>
                     ))}
                 </ul>
+
+                <p className='prose'>{description}</p>
 
                 <div className={Styles.links}>
                     {demoUrl && (
