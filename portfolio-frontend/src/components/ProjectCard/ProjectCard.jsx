@@ -7,7 +7,7 @@ function ProjectCard({ title, description, image, stack, demoUrl, codeUrl }) {
     return (
         <article className={Styles.card}>
             <div className={Styles.imageWrapper}>
-                <img src={image} alt={`screenshot of ${title}`} />
+                <img src={image} alt={`screenshot of ${title}`} loading='lazy' />
             </div>
 
             <div className={Styles.content}>
