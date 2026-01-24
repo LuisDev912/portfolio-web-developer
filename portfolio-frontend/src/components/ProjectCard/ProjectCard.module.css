@@ -54,7 +54,7 @@
 
 /* --- media query --- */
 
-@media (min-width: 768){
+@media (min-width: 768px){
     .card{
         display: grid;
         grid-template-columns: 1fr 1.2fr;
