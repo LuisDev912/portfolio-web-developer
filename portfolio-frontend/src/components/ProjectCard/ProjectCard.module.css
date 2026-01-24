@@ -39,13 +39,15 @@
 
 .links {
     display: flex;
-    justify-content: space-around;
-    gap: var(--space-md);
+    justify-content: flex-start;
+    align-items: flex-end;
+    gap: var(--space-xs);
 }
 
 .links a{
-    background: rgba(255, 255, 255, 0.03);
-    border: 1px solid rgba(255, 255, 255, 0.08);
+    background: rgba(31, 41, 55, 1);
+    border: 1px solid rgba(78, 84, 98, 1);
     padding: var(--space-sm);
     border-radius: var(--radius-lg);
+    color: var(--text-primary);
 }

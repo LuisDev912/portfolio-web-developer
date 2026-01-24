@@ -1,4 +1,6 @@
 import Styles from './ProjectCard.module.css';
+import { PreviewProject } from '../../svg-icons/PreviewProject.jsx'
+import { LinkToCode } from '../../svg-icons/LinkToCode.jsx';
 
 
 function ProjectCard({ title, description, image, stack, demoUrl, codeUrl }) {
@@ -28,6 +30,7 @@ function ProjectCard({ title, description, image, stack, demoUrl, codeUrl }) {
                             target='_blank'
                             rel='noreferrer'
                         >
+                            <PreviewProject />
                             Live demo
                         </a>
                     )}
@@ -38,6 +41,7 @@ function ProjectCard({ title, description, image, stack, demoUrl, codeUrl }) {
                             target='_blank'
                             rel='noreferrer'
                         >
+                            <LinkToCode />
                             Code
                         </a>
                     )}
