@@ -10,12 +10,13 @@ export default function HomePage() {
             <section>
                 <h3 className="heading-secondary">Projects</h3>
                 <ProjectCard
-                    title='example'
-                    description='Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris'
-                    image='blank'
+                    title='Fast Shopping List - Create your grocery list and calculate prices easily.'
+                    description='Fast Shopping List is a simple frontend project that lets you create shopping lists and calculate total prices easily. You can insert the name of a product, its price, and the amount of units or packages.
+                    The app automatically calculates the total cost and saves your lists in the browser using localStorage.'
+                    image='/images/shop-list-preview.webp'
                     stack={['React', 'i18n']}
-                    demoUrl='http://page.host.com'
-                    codeUrl='https://github.com/example'
+                    demoUrl='https://luisdev912.github.io/shop-list/'
+                    codeUrl='https://github.com/LuisDev912/shop-list'
                 
                 />
             </section>
