@@ -51,3 +51,23 @@
     border-radius: var(--radius-lg);
     color: var(--text-primary);
 }
+
+/* --- media query --- */
+
+@media (min-width: 768){
+    .card{
+        display: grid;
+        grid-template-columns: 1fr 1.2fr;
+        grid-template-areas: "image content";
+        gap: var(--space-xl);
+        align-items: center;
+    }
+
+    .imageWrapper{
+        grid-area: image;
+    }
+
+    .content{
+        grid-area: content;
+    }
+}
