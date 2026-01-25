@@ -4,7 +4,8 @@ import { Route, Routes } from 'react-router-dom';
 
 const MainLayout = lazy(() => import('./layout/MainLayout.jsx'));
 const HomePage = lazy(() => import('./pages/Home.jsx'));
-const NotFoundPage = lazy(() => import('./pages/NotFoundPage.jsx'))
+const NotFoundPage = lazy(() => import('./pages/NotFoundPage.jsx'));
+const ProjectsPage = lazy(() => import('./pages/Projects.jsx'));
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
         <Route element={<MainLayout />}>
 
           <Route path="/" element={<HomePage />} />
+          <Route path="/projects" element={<ProjectsPage />} />
           <Route path='*' element={<NotFoundPage />} />
 
         </Route>
