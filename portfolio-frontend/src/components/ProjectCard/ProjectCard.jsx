@@ -2,8 +2,7 @@ import Styles from './ProjectCard.module.css';
 import { PreviewProject } from '../../svg-icons/PreviewProject.jsx'
 import { LinkToCode } from '../../svg-icons/LinkToCode.jsx';
 
-
-function ProjectCard({ title, description, image, stack, demoUrl, codeUrl }) {
+function ProjectCard({ title, subtitle, description, image, stack, demoUrl, codeUrl }) {
     return (
         <article className={Styles.card}>
             <div className={Styles.imageWrapper}>
@@ -12,6 +11,7 @@ function ProjectCard({ title, description, image, stack, demoUrl, codeUrl }) {
 
             <div className={Styles.content}>
                 <h3 className={Styles.title}>{title}</h3>
+                <p className={Styles.subtitle}>{subtitle}</p>
 
                 <ul className={Styles.stack}>
                     {stack.map(tech => (
