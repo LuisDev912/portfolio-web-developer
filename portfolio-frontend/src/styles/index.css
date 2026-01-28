@@ -174,7 +174,6 @@ p {
 .prose {
     max-width: 60ch;
     line-height: 1.7;
-    text-align: justify;
 }
 
 section>*+* {
