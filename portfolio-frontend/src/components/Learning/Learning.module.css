@@ -38,6 +38,12 @@
     padding: .25rem .5rem;
 }
 
+.introduction {
+    display: flex;
+    align-items: flex-end;
+    gap: var(--space-xs);
+}
+
 /* --- text --- */
 
 .courseTitle{

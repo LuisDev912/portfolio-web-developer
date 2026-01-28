@@ -1,3 +1,4 @@
+import { LearningIcon } from '../../svg-icons/LearningIcon';
 import Styles from './Learning.module.css'
 
 function Learning() {
@@ -28,7 +29,10 @@ function Learning() {
 
     return (
         <section>
-            <h2 className="heading-secondary">Learning & Training</h2>
+            <div className={Styles.introduction}>
+                <LearningIcon />
+                <h2 className="heading-secondary">Learning & Training</h2>
+            </div>
 
             <ul className={Styles.coursesList}>
                 {courses.map(course => (
