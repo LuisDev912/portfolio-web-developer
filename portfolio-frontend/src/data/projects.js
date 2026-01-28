@@ -63,7 +63,7 @@ export const projects = [
         subtitle: 'Train your English grammar',
         description: 'A simple Python CLI program to practice irregular English verbs. The user must guess the correct past simple form of randomly chosen verbs. This project is meant to help learners improve their English vocabulary. The program also saves information such as total points and history.',
         image: '/images/English-trainer-preview.webp',
-        stack: ['Python', 'CLI', 'JSON'],
+        stack: ['Python', 'CLI', 'JSON', 'OOP'],
         codeUrl: 'https://github.com/LuisDev912/irregular-verbs-trainer/'
     }
 ];

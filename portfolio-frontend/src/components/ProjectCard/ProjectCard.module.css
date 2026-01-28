@@ -6,7 +6,11 @@
 }
 
 .imageWrapper{
+    width: 100%;
     height: 100%;
+    border-radius: var(--radius-md);
+    aspect-ratio: 16 / 9;
+    overflow: hidden;
 }
 
 .imageWrapper img {
@@ -16,6 +20,7 @@
     transition: transform 300ms cubic-bezier(0.4, 0, 0.2, 1);
     border-radius: var(--radius-md);
     display: block;
+    object-fit: cover;
 }
 
 .imageWrapper img:hover{
