@@ -25,9 +25,11 @@ No UI frameworks or CSS libraries are used in order to clearly demonstrate layou
 ```
 src/
 ├─ components/   # Reusable UI components
+├─ data/         # API mock
 ├─ pages/        # Main sections/pages
 ├─ data/         # Static data (projects, content)
 ├─ styles/       # Global styles and variables
+├─ svg-icons/    # Components with SVG icons
 ├─ layout/       # Global layout for each page 
 ├─ App.jsx
 └─ main.jsx
