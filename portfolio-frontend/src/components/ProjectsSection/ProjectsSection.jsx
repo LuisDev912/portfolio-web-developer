@@ -6,7 +6,7 @@ function ProjectsSection({ title, projects }) {
         <section className={Styles.projects}>
             <h3 className="heading-secondary">{title}</h3>
 
-            <div className={Styles.gridContainer}>
+            <div className={Styles.projectsContainer}>
                 {projects.map(project => (
                     <ProjectCard
                         key={project.id}

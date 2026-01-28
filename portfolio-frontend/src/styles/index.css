@@ -220,6 +220,7 @@ button {
     padding: var(--space-sm);
     border-radius: var(--radius-md);
     background-color: var(--button-background);
+    font-size: var(--font-size-sm);
     transition:
             background-color var(--transition-fast),
             box-shadow var(--transition-fast);
