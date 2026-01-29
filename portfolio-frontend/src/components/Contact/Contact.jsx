@@ -2,7 +2,7 @@ import Styles from './Contact.module.css'
 
 function Contact() {
     return (
-        <section className={Styles.information}>
+        <section className={Styles.information} id='information-section'>
             <p>
                 <i className="fa-solid fa-envelope" aria-hidden="true"></i>
                 <span className="sr-only">My Email</span>

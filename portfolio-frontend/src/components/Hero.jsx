@@ -2,7 +2,7 @@
 
 function Hero() {
     return (
-        <section className='hero'>
+        <section className='hero' id='introduction-section'>
             
             <h1 className="heading-primary">
                 Frontend-oriented Full Stack Developer 

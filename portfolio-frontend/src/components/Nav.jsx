@@ -12,7 +12,6 @@ function Nav() {
             textAlign: 'center'
         }}>
             <NavItem type="route" to="/projects" label="View all projects" />
-            <NavItem type="section" to="projects-section" label="see featured projects" />
         </nav>
     )
 }

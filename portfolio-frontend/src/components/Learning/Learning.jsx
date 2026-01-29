@@ -28,7 +28,7 @@ function Learning() {
     ];
 
     return (
-        <section>
+        <section id='learning-section'>
             <div className={Styles.introduction}>
                 <LearningIcon />
                 <h2 className="heading-secondary">Learning & Training</h2>
