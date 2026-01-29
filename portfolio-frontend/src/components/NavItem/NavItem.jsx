@@ -1,8 +1,17 @@
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import Styles from './NavItem.module.css';
 
 function NavItem({ to, label }) {
-    return <Link to={to} className={Styles.itemAnchor}>{label}</Link>
+    return <NavLink 
+        to={to} 
+        className={({ isActive }) =>
+                isActive
+                    ? `${Styles.itemAnchor} ${Styles.active}`
+                    : Styles.itemAnchor
+            }
+    >
+        {label}
+    </NavLink>
 }
 
 export default NavItem;

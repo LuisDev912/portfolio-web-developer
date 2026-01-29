@@ -99,10 +99,15 @@ a{
     color: var(--text-muted);
     text-decoration: none;
     margin-left: 5px;
+    transition: color var(--transition-fast);
 }
 
 a:hover{
     text-decoration: underline;
+}
+
+a:active{
+    color: var(--text-secondary)
 }
 
 main {
