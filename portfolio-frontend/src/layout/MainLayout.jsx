@@ -12,8 +12,9 @@ function MainLayout() {
 
     return (
         <>
-            <Nav />
-            
+            <header>
+                <Nav />
+            </header>
 
             <button
                 className="skip-link"

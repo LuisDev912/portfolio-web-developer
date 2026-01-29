@@ -1,6 +1,15 @@
 .navBar{
+    /* fixed nav bar effect */
     position: fixed;
     top: 0;
-    width: 100%;
+    width: fit-content;
     z-index: 100;
+
+    margin-top: var(--space-xxl);
+    display: flex;
+    gap: var(--space-md);
+    paddinG: var(--space-sm);
+    justify-content: center;
+    background-color: var(--background);
+    border-radius: var(--radius-full)
 }
