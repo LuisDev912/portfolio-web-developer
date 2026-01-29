@@ -1,3 +1,5 @@
+// TODO: improve Hero component to be reusable
+
 function Hero() {
     return (
         <section className='hero'>

@@ -3,9 +3,16 @@ import NavItem from "./NavItem";
 
 function Nav() {
     return (
-        <nav>
-            <NavItem type="route" to="/projects" label="go to projects" />
-            <NavItem type="scroll" to="projects-section" label="see featured projects" />
+        <nav style={{
+            // these styles will be in a CSS module
+            position: 'fixed',
+            top: '0',
+            width: '100%',
+            zIndex: '100',
+            textAlign: 'center'
+        }}>
+            <NavItem type="route" to="/projects" label="View all projects" />
+            <NavItem type="section" to="projects-section" label="see featured projects" />
         </nav>
     )
 }
