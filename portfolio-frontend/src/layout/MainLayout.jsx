@@ -12,7 +12,7 @@ function MainLayout() {
 
     return (
         <>
-            <header>
+            <header className="Header">
                 <Nav />
             </header>
 
