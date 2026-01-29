@@ -1,5 +1,5 @@
 import { navRoutes } from "../../data/navCongif";
-import NavItem from "../NavItem";
+import NavItem from "../NavItem/NavItem.jsx";
 import Styles from './Nav.module.css'
 // this component will contain different nav items that lead to different parts of the app 
 
