@@ -4,7 +4,7 @@ import Styles from './ProjectsSection.module.css';
 
 function ProjectsSection({ title, projects }) {
     return (
-        <section className={Styles.projects}>
+        <section className={Styles.projects} id='projects-section'>
             <div className={Styles.introduction}>
                 <Code />
                 <h3 className="heading-secondary">{title}</h3>

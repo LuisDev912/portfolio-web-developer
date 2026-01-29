@@ -85,6 +85,10 @@ body {
     line-height: 1.6;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 @supports (min-height: 100dvh){
     body{
         min-height: 100dvh;

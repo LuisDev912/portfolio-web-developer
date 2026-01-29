@@ -1,6 +1,7 @@
 import { Outlet } from "react-router";
-import Footer from "../components/Footer.jsx";
 import { useRef, useEffect } from "react";
+import Footer from "../components/Footer.jsx";
+import Nav from "../components/Nav.jsx";
 
 function MainLayout() {
     const mainRef = useRef(null);
@@ -11,6 +12,9 @@ function MainLayout() {
 
     return (
         <>
+            <Nav />
+            
+
             <button
                 className="skip-link"
                 onClick={() => {
