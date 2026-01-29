@@ -1,7 +1,7 @@
 import { Outlet } from "react-router";
 import { useRef, useEffect } from "react";
 import Footer from "../components/Footer.jsx";
-import Nav from "../components/Nav.jsx";
+import Nav from "../components/Nav/Nav.jsx";
 
 function MainLayout() {
     const mainRef = useRef(null);
