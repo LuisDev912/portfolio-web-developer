@@ -1,3 +1,4 @@
+import { navRoutes } from "../data/navCongif";
 import NavItem from "./NavItem";
 // this component will contain different nav items that lead to different parts of the app 
 
@@ -11,7 +12,13 @@ function Nav() {
             zIndex: '100',
             textAlign: 'center'
         }}>
-            <NavItem type="route" to="/projects" label="View all projects" />
+            {navRoutes.map(route => (
+                <NavItem
+                    key={route.to}
+                    to={route.to}
+                    label={route.label}
+                />
+            ))}
         </nav>
     )
 }
