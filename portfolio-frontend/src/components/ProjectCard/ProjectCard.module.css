@@ -5,6 +5,10 @@
     margin: var(--space-xxl) var(--space-md);
 }
 
+.card:first-child{
+    margin: var(--space-xxs) var(--space-md);
+}
+
 .imageWrapper{
     width: 100%;
     height: 100%;
