@@ -1,6 +1,7 @@
 import { projects } from "../data/projects";
-import ProjectsSection from "../components/ProjectsSection/ProjectsSection";
 import { useNavigate } from 'react-router-dom';
+import ProjectsSection from "../components/ProjectsSection/ProjectsSection";
+import Hero from "../components/Hero";
 
 
 export default function Projects() {
@@ -8,6 +9,7 @@ export default function Projects() {
     
     return (
         <>
+            <Hero description="Collection of projects focused on clean UI, accessibility and maintainable code" />
             <ProjectsSection title='Projects' projects={projects} />
 
             <button

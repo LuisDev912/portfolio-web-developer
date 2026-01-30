@@ -1,15 +1,12 @@
-// TODO: improve Hero component to be reusable
-
-function Hero() {
+function Hero({ title, description }) {
     return (
         <section className='hero' id='introduction-section'>
-            
             <h1 className="heading-primary">
-                Frontend-oriented Full Stack Developer 
+                {title}
             </h1>
 
             <p className="heading-tertiary prose">
-                Building clean, accessible web applications with modern JavaScript. 
+                {description}
             </p>
         </section>
     )

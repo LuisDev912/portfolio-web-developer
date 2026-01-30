@@ -10,7 +10,7 @@ export default function HomePage() {
 
     return (
         <>
-            <Hero />
+            <Hero title="Frontend-oriented Full Stack Developer" description="Building clean, accessible web applications with modern JavaScript." />
             <Learning />
             <ProjectsSection title='Featured projects' projects={featuredProjects} />
             <button onClick={() => navigate('/projects')}>
