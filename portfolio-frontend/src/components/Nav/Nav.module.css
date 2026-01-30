@@ -1,18 +1,26 @@
-.navBar{
+.navBar {
     /* fixed nav bar effect */
     position: fixed;
-    top: 0;
-    width: fit-content;
+    bottom: var(--space-md);
     z-index: 100;
 
     display: flex;
     gap: var(--space-md);
     justify-content: center;
-    
-    margin-top: var(--space-xxl);
+
     padding: var(--space-xxs) var(--space-sm);
     background-color: rgba(31, 41, 55, 0.9);
     -webkit-backdrop-filter: blur(4px);
     backdrop-filter: blur(4px);
+    border: 1px solid rgba(255, 255, 255, 0.08);
     border-radius: var(--radius-full);
+}
+
+/* Desktop / tablets */
+@media (min-width: 769px) {
+    .navBar {
+        top: 0;
+        bottom: auto;
+        margin-top: var(--space-xxl);
+    }
 }
