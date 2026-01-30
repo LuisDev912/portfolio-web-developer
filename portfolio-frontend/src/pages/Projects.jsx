@@ -9,7 +9,11 @@ export default function Projects() {
     
     return (
         <>
-            <Hero description="Collection of projects focused on clean UI, accessibility and maintainable code" />
+            <Hero
+                title="Projects"
+                description="Collection of projects focused on clean UI, accessibility and maintainable code"
+            />
+
             <ProjectsSection title='Projects' projects={projects} />
 
             <button

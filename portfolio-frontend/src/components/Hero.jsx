@@ -1,4 +1,4 @@
-function Hero({ title, description }) {
+function Hero({ title, description, children }) {
     return (
         <section className='hero' id='introduction-section'>
             <h1 className="heading-primary">
@@ -8,6 +8,8 @@ function Hero({ title, description }) {
             <p className="heading-tertiary prose">
                 {description}
             </p>
+
+            {children}
         </section>
     )
 }
