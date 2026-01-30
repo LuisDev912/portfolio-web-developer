@@ -12,8 +12,8 @@ export default function HomePage() {
     return (
         <>
             <Hero 
-                title="Hi, I'm Luis!
-                Frontend-oriented full-stack developer based in Argentina" description="Building clean, accessible web applications with modern JavaScript." 
+                title="Hi, I'm Luis!" 
+                description="Frontend-oriented full-stack developer based in Argentina" 
             > 
                 <About />
             </Hero>

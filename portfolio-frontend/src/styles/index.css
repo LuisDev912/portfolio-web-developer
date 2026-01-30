@@ -135,11 +135,10 @@ footer{
 }
 
 /* Hero overrides */
-section.hero {
+.hero {
     padding-block: 6rem 5rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    margin-inline: auto;
+    max-width: 65ch;
 }
 
 /* --- text --- */
@@ -181,6 +180,10 @@ p {
 .italic {
     font-style: italic;
     color: var(--text-secondary);
+}
+
+.focus-text{
+    color: var(--color-accent);
 }
 
 /* micro typography */
