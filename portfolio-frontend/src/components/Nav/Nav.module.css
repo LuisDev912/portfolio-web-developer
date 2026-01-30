@@ -1,7 +1,7 @@
 .navBar {
     /* fixed nav bar effect */
     position: fixed;
-    bottom: var(--space-md);
+    bottom: var(--space-xl);
     z-index: 100;
 
     display: flex;
