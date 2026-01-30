@@ -5,7 +5,7 @@ import Styles from './Nav.module.css'
 
 function Nav() {
     return (
-        <nav className={Styles.navBar}>
+        <nav className={Styles.navBar} aria-label="Main navigation">
             {navRoutes.map(route => (
                 <NavItem
                     key={route.to}

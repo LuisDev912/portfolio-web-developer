@@ -25,7 +25,7 @@
     --text-muted: #9CA3AF;
 
     /* button */
-    --button-background: #2398ff;
+    --button-background: #6ba4ff;
     --button-hover: #145a97;
     --button-active: #003569;
 
@@ -238,7 +238,7 @@ button {
     transition:
             background-color var(--transition-fast),
             box-shadow var(--transition-fast);
-    color: var(--neutral);
+    color: #000;
 }
 
 button:hover {
