@@ -1,7 +1,18 @@
 import { useNavigate } from 'react-router';
+import { useSEO } from '../hooks/useSEO';
 
 export default function NotFoundPage() {
     const navigate = useNavigate();
+
+    useSEO({
+        title: "404 | Not Found Page",
+        description: "The page you were looking for does not exist.",
+        og: {
+            title: "404 | Not Found Page",
+            description: "The page you were looking for does not exist."
+        },
+        noIndex: true,
+    });
 
     return (
         <section
@@ -10,6 +21,7 @@ export default function NotFoundPage() {
                 alignItems: 'center',
                 flexDirection: 'column'
             }}
+            id='Not-found-section'
         >
             <h1
                 className="heading-primary"

@@ -17,7 +17,7 @@ function setMeta({ name, property, content }) {
     }
 
     meta.setAttribute("content", content);
-}
+};
 
 export function useSEO({ title, description, og, noIndex = false }) {
 
@@ -52,4 +52,4 @@ export function useSEO({ title, description, og, noIndex = false }) {
             });
         }
     }, [title, description, og, noIndex]);
-}
+};

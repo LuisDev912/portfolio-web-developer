@@ -1,5 +1,6 @@
 import { projects } from "../data/projects";
 import { useNavigate } from 'react-router-dom';
+import { useSEO } from "../hooks/useSEO";
 import ProjectsSection from "../components/ProjectsSection/ProjectsSection";
 import Hero from "../components/Hero";
 
@@ -7,6 +8,15 @@ import Hero from "../components/Hero";
 export default function Projects() {
     const navigate = useNavigate();
     
+    useSEO({
+        title: 'Projects | Luis - Frontend-oriented Full Stack Developer',
+        description: 'Selected frontend and full stack projects.',
+        og: {
+            title: 'Projects | Luis',
+            description: 'Selected frontend and full stack projects.'
+        }
+    });
+
     return (
         <>
             <Hero
