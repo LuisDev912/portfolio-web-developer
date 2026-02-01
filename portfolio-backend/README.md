@@ -19,8 +19,7 @@ src/
 ├─ controllers/ # Request handling logic
 ├─ services/ # Business logic
 ├─ middlewares/ # Custom middlewares
-├─ config/ # App configuration
-└─ utils/ # Helper functions
+└─ config/ # App configuration
 ```
 
 

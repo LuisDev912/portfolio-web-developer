@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [],
+  "keywords": ["portfolio", "backend", "REST", "API" ],
   "author": "Luis Calleja",
   "license": "ISC",
   "type": "module",
