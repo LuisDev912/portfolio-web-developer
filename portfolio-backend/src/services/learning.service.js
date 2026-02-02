@@ -16,8 +16,8 @@ export const learningCheck = () => ({
             year: "2025"
         },
         {
-            id: "html-css-google",
-            title: "HTML & CSS Foundations",
+            id: "Google Actívate",
+            title: "Web Development Introduction",
             provider: "Google",
             focus: ["Semantic HTML", "Modern CSS"],
             year: "2024"
