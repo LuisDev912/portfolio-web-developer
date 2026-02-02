@@ -10,6 +10,13 @@ export class LearningController {
         const { id } = req.params;
         const course = await learningCheck.find(course => course.id === id);
 
+        if (!course) {
+            return res.status(404).json({
+                message: 'Not found course',
+                id
+            })
+        }
+
         return res.json(course)
     };
 };
