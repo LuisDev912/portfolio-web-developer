@@ -1,8 +1,9 @@
 import { Router } from 'express';
-import { getLearning } from '../controllers/learning.controller.js';
+import { getLearning, getLearningById } from '../controllers/learning.controller.js';
 
-const router = Router();
+const learningRouter = Router();
 
-router.get('/', getLearning);
+learningRouter.get('/', getLearning);
+learningRouter.get('/:id', getLearningById)
 
-export default router;
+export default learningRouter;
