@@ -21,4 +21,4 @@ export const learningCheck = [
         focus: ["Semantic HTML", "Modern CSS"],
         year: "2024"
     }
-]
+];
