@@ -1,12 +1,24 @@
-import { projects } from "../data/projects";
 import { useNavigate } from 'react-router-dom';
+import { useState, useEffect } from "react";
 import { useSEO } from "../hooks/useSEO";
+import { getProjects } from "../services/api";
 import ProjectsSection from "../components/ProjectsSection/ProjectsSection";
 import Hero from "../components/Hero";
 
 
 export default function Projects() {
     const navigate = useNavigate();
+    const [projects, setProjects] = useState([]);
+    const [loading, setLoading] = useState(true);
+    const [error, setError] = useState(null);
+
+    useEffect(() => {
+        getProjects()
+            .then(setProjects)
+            .catch(err => setError(err.message))
+            .finally(() => setLoading(false));
+    }, []);
+
     
     useSEO({
         title: 'Projects | Luis - Frontend-oriented Full Stack Developer',
@@ -16,6 +28,9 @@ export default function Projects() {
             description: 'Selected frontend and full stack projects.'
         }
     });
+    
+    if (loading) return <p>Loading...</p>;
+    if (error) return <p>Error: {error}</p>;
 
     return (
         <>
