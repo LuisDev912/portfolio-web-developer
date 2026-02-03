@@ -26,6 +26,7 @@ src/
 ## Available Endpoints
 - `GET /api/health` → Health check endpoint
 - `GET /api/learning` → Learning courses endpoint
+- `GET /api/projects` → Projects showcase endpoint
 
 ## Setup
 ```bash
