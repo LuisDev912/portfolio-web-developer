@@ -19,3 +19,11 @@ export async function getProjectById(id) {
 
     return res.json();
 }
+
+export async function getFeatured() {
+    const res = await fetch(`${API_URL}/projects?featured=true`);
+
+    if (!res.ok) throw new Error('Failed to fetch featured projects');
+    
+    return res.json();
+}

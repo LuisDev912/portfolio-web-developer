@@ -1,6 +1,7 @@
 import { useNavigate } from 'react-router';
+import { useState, useEffect } from 'react';
 import { useSEO } from '../hooks/useSEO.jsx';
-import { projects } from "../data/projects.js";
+import { getFeatured } from '../services/api.js';
 import Hero from "../components/Hero";
 import About from "../components/About.jsx";
 import Learning from "../components/Learning/Learning.jsx";
@@ -8,7 +9,17 @@ import ProjectsSection from "../components/ProjectsSection/ProjectsSection.jsx";
 
 export default function HomePage() {
     const navigate = useNavigate();
-    const featuredProjects = projects.filter(project => project.featured);
+    const [projects, setProjects] = useState([]);
+    const [loading, setLoading] = useState(true);
+    const [error, setError] = useState(null);
+
+    useEffect(() => {
+        getFeatured()
+            .then(setProjects)
+            .catch(err => setError(err.message))
+            .finally(() => setLoading(false));
+    }, []);
+
 
     useSEO({
         title: "Luis | Frontend-oriented Full Stack Developer",
@@ -18,6 +29,9 @@ export default function HomePage() {
             description: "Frontend-oriented full stack developer building accessible, modern and minimalist web applications with React, JavaScript and Node.js."
         }
     });
+
+    if (loading) return <p>Loading...</p>;
+    if (error) return <p>Error: {error}</p>;
 
     return (
         <>
@@ -31,7 +45,7 @@ export default function HomePage() {
             <Learning />
             <ProjectsSection 
                 title='Featured projects' 
-                projects={featuredProjects} 
+                projects={projects} 
             />
 
             <button onClick={() => navigate('/projects')}>
