@@ -1,31 +1,22 @@
+import { useEffect, useState } from 'react';
+import { getCourses } from '../../services/api';
 import { LearningIcon } from '../../svg-icons/LearningIcon';
 import Styles from './Learning.module.css'
 
 function Learning() {
-    const courses = [
-        {
-            id: "jscamp",
-            title: "Full Stack JavaScript Bootcamp",
-            provider: "Midudev",
-            status: "In progress",
-            focus: ["JavaScript", "React", "Node.js", "Express", "Testing", "In process..."],
-            year: "2025-Present"
-        },
-        {
-            id: "web.dev",
-            title: "Responsive Web Design",
-            provider: "Google",
-            focus: ["Mobile-first", "Flexbox", "CSS Grid"],
-            year: "2025"
-        },
-        {
-            id: "html-css-google",
-            title: "HTML & CSS Foundations",
-            provider: "Google",
-            focus: ["Semantic HTML", "Modern CSS"],
-            year: "2024"
-        }
-    ];
+    const [courses, setCourses] = useState([]);
+    const [loading, setLoading] = useState(true);
+    const [error, setError] = useState(null);
+
+    useEffect(() => {
+        getCourses()
+            .then(setCourses)
+            .catch(err => setError(err.message))
+            .finally(() => setLoading(false));
+    }, []);
+
+    if (loading) return <p>Loading...</p>;
+    if (error) return <p>Error: {error}</p>;
 
     return (
         <section id='learning-section'>
