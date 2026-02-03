@@ -2,8 +2,16 @@ import { projects } from "../services/projects.service.js";
 
 // Use a class to have all the methods to encapsulate similar functions
 export class ProjectsController {
-    static getAll(_, res) { // Use "static" to make methods belong to the function instead of an instance
-        return res.json(projects);
+    static getAll(req, res) { // Use "static" to make methods belong to the function instead of an instance
+        const { featured } = req.query;
+
+        let result = projects;
+
+        if (featured === "true") {
+            result = projects.filter(project => project.featured === true)
+        };
+
+        res.json(result);
     };
 
     static getById(req, res) {
