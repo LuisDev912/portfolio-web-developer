@@ -1,4 +1,4 @@
-const API_URL = 'http://localhost:3001/api'; // Having hard coded APIs is not a good practice. This will be changed
+const API_URL = import.meta.env.VITE_API_URL;
 
 export async function getProjects() {
     const res = await fetch(`${API_URL}/projects`);
