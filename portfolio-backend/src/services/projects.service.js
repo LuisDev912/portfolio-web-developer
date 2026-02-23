@@ -18,6 +18,7 @@ export const projects = [
         description: 'A modern, accessible and multilingual guide for praying the Holy Rosary step by step with a simple, clear and responsive style. Contains an information page about the basics of the Rosary with a page that helps while praying',
         image: '/images/Rosary-guide-preview.webp',
         stack: ['React', 'i18n', 'CSS Modules', 'Accessibility'],
+        demoUrl: 'https://rosary-guide.vercel.app/',
         codeUrl: 'https://github.com/LuisDev912/Rosary-guide'
     },
     {

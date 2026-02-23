@@ -4,7 +4,7 @@ export const learningCheck = [
         title: "Full Stack JavaScript Bootcamp",
         provider: "Midudev",
         status: "In progress",
-        focus: ["JavaScript", "React", "Node.js", "Express", "Testing", "In process..."],
+        focus: ["JavaScript", "React", "Node.js", "Express", "Testing", "TypeScript", "AI", "In process..."],
         year: "2025-Present"
     },
     {
