@@ -26,7 +26,7 @@ No UI frameworks or CSS libraries are used in order to clearly demonstrate layou
 src/
 ├─ components/   # Reusable UI components
 ├─ hooks/        # Reusable custom hooks
-├─ data/         # API mock
+├─ data/         # Nav items resource
 ├─ pages/        # Main sections/pages
 ├─ data/         # Static data (projects, content)
 ├─ styles/       # Global styles and variables

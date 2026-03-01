@@ -20,7 +20,6 @@ export default function HomePage() {
             .finally(() => setLoading(false));
     }, []);
 
-
     useSEO({
         title: "Luis | Frontend-oriented Full Stack Developer",
         description: "Frontend-oriented full stack developer building accessible, modern and minimalist web applications with React, JavaScript and Node.js.",
