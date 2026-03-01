@@ -3,7 +3,8 @@ import cors from 'cors'
 const ACCEPTED_ORIGINS = [
     'http://localhost:3000',
     'http://localhost:5173',
-    'https://portfolio-web-frontend-virid.vercel.app/'
+    'https://portfolio-web-developer-front.vercel.app/',
+    'https://portfolio-web-developer-front.vercel.app'
 ]
 
 export const corsMiddleware = ({ acceptedOrigins = ACCEPTED_ORIGINS } = {}) => {
