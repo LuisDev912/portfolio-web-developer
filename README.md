@@ -71,6 +71,32 @@ The portfolio includes a contact section connected to the backend API, designed 
 
 ---
 
+## Installation
+
+Clone this repository to your local machine:
+
+```bash
+[git clone https://github.com](https://github.com/LuisDev912/portfolio-web-developer.git)
+```
+
+Navigate to the project directory and install the required dependencies:
+
+```bash
+cd portfolio-frontend
+npm install
+npm run dev
+```
+
+Then navigate to the backend directory and install the required dependencies. Then, run the localhost:
+
+``` bash
+cd ../portfolio-backend
+npm install
+node --watch index.js
+```
+
+---
+
 ## About Me
 
 I am a junior full stack developer with a strong frontend orientation.
