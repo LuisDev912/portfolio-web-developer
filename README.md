@@ -90,7 +90,7 @@ npm run dev
 Then navigate to the backend directory and install the required dependencies. Then, run the localhost:
 
 ``` bash
-cd ../portfolio-backend
+cd ../portfolio-backend/src/
 npm install
 node --watch index.js
 ```
