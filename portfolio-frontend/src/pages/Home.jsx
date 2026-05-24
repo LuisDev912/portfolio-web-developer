@@ -2,7 +2,7 @@ import { useNavigate } from 'react-router';
 import { useState, useEffect } from 'react';
 import { useSEO } from '../hooks/useSEO.jsx';
 import { getFeatured } from '../services/api.js';
-import Hero from "../components/Hero";
+import Hero from "../components/Hero.jsx";
 import About from "../components/About.jsx";
 import Learning from "../components/Learning/Learning.jsx";
 import ProjectsSection from "../components/ProjectsSection/ProjectsSection.jsx";

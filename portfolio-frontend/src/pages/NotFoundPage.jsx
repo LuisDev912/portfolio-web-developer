@@ -1,5 +1,5 @@
 import { useNavigate } from 'react-router';
-import { useSEO } from '../hooks/useSEO';
+import { useSEO } from '../hooks/useSEO.jsx';
 
 export default function NotFoundPage() {
     const navigate = useNavigate();
