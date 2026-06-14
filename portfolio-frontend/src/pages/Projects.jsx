@@ -2,8 +2,8 @@ import { useNavigate } from 'react-router-dom';
 import { useState, useEffect } from "react";
 import { useSEO } from "../hooks/useSEO.jsx";
 import { getProjects } from "../services/api.js";
-import ProjectsSection from "../components/ProjectsSection/ProjectsSection.tsx";
-import Hero from "../components/Hero.tsx";
+import ProjectsSection from "../components/ProjectsSection/ProjectsSection.jsx";
+import Hero from "../components/Hero.jsx";
 
 
 export default function Projects() {
